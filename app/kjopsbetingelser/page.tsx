@@ -97,7 +97,7 @@ export default function Kjopsbetingelser() {
               <h2>12. Lovvalg og verneting</h2>
               <p>
                 Avtalen er underlagt norsk rett. Tvister skal søkes løst ved forhandlinger. Hvis forhandlinger ikke
-                fører frem, skal tvisten avgjøres ved de ordinære domstoler med Oslo tingrett som verneting.
+                fører frem, skal tvisten avgjøres ved de ordinære domstoler med Kristiansand tingrett som verneting.
               </p>
 
               <h2>13. Endringer</h2>

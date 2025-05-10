@@ -72,7 +72,7 @@ export default function RootLayout({
     <html lang="no" className="scroll-smooth">
       <head>
         <meta name="geo.region" content="NO" />
-        <meta name="geo.placename" content="Oslo" />
+        <meta name="geo.placename" content="Kristiansand" />
         <link rel="canonical" href="https://www.lettpaanett.no" />
 
         {/* Strukturerte data for bedre SEO */}
@@ -105,18 +105,18 @@ export default function RootLayout({
               image: "https://www.lettpaanett.no/logo.png",
               "@id": "https://www.lettpaanett.no",
               url: "https://www.lettpaanett.no",
-              telephone: "+4712345678",
+              email: "kontakt@lettpaanett.no",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Storgata 1",
-                addressLocality: "Oslo",
-                postalCode: "0155",
+                streetAddress: "Snorresgate 22",
+                addressLocality: "Kristiansand",
+                postalCode: "4632",
                 addressCountry: "NO",
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 59.9139,
-                longitude: 10.7522,
+                latitude: 58.1599,
+                longitude: 8.0182,
               },
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Mail, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -84,11 +84,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-2 shrink-0 mt-0.5" />
-                <span className="text-gray-400">Storgata 1, 0155 Oslo, Norge</span>
-              </li>
-              <li className="flex items-center">
-                <Phone className="h-5 w-5 text-primary mr-2 shrink-0" />
-                <span className="text-gray-400">+47 123 45 678</span>
+                <span className="text-gray-400">Snorresgate 22, 4632 Kristiansand, Norge</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-2 shrink-0" />

@@ -28,7 +28,7 @@ export default function Personvern() {
               <h2>2. Hvilke personopplysninger vi behandler</h2>
               <p>Vi kan samle inn og behandle følgende personopplysninger:</p>
               <ul>
-                <li>Kontaktinformasjon: Navn, e-postadresse, telefonnummer, bedriftsnavn</li>
+                <li>Kontaktinformasjon: Navn, e-postadresse, bedriftsnavn</li>
                 <li>Teknisk informasjon: IP-adresse, nettlesertype, besøkstid, sidevisninger</li>
                 <li>Kommunikasjon: Innhold i e-poster og skjemaer du sender oss</li>
                 <li>Betalingsinformasjon: Fakturainformasjon (ikke kortdetaljer)</li>
@@ -121,14 +121,12 @@ export default function Personvern() {
                 <br />
                 Lett på Nett
                 <br />
-                Storgata 1, 0155 Oslo
+                Snorresgate 22, 4632 Kristiansand
                 <br />
                 E-post:{" "}
                 <a href="mailto:personvern@lettpaanett.no" className="text-primary hover:underline">
                   personvern@lettpaanett.no
                 </a>
-                <br />
-                Telefon: +47 123 45 678
               </p>
 
               <p className="mt-8">
