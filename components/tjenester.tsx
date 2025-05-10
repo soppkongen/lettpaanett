@@ -5,36 +5,36 @@ export function Tjenester() {
     {
       icon: <Code className="h-10 w-10 text-primary" />,
       title: "Nettside Utvikling",
-      description: "Skreddersydde nettsider med moderne design og funksjonalitet som passer din bedrifts behov.",
+      description: "Vi lager nettsider som passer for din bedrift – enkle å bruke og som gir deg flere kunder.",
     },
     {
       icon: <Smartphone className="h-10 w-10 text-primary" />,
-      title: "Responsivt Design",
-      description: "Nettsider som fungerer perfekt på alle enheter, fra mobil til desktop.",
+      title: "Mobilvisning",
+      description: "Nettsiden fungerer like bra på mobil som på PC – viktig siden de fleste søker på telefonen.",
     },
     {
       icon: <Search className="h-10 w-10 text-primary" />,
-      title: "SEO Optimalisering",
-      description: "Forbedre din synlighet i søkemotorer og tiltrekk flere potensielle kunder.",
+      title: "Søkemotoroptimalisering",
+      description: "Vi sørger for at folk finner deg på Google når de søker etter det du tilbyr.",
     },
     {
       icon: <Zap className="h-10 w-10 text-primary" />,
-      title: "Ytelsesoptimalisering",
-      description: "Raske nettsider som gir bedre brukeropplevelse og høyere konverteringsrate.",
+      title: "Rask nettside",
+      description: "Nettsiden laster raskt – ingen venter på trege sider, og Google liker raske sider.",
     },
     {
       icon: <Shield className="h-10 w-10 text-primary" />,
-      title: "Vedlikehold & Sikkerhet",
-      description: "Kontinuerlig vedlikehold og sikkerhetsoppdateringer for å beskytte din nettside.",
+      title: "Support & Sikkerhet",
+      description: "Vi holder nettsiden din oppdatert og sikker, så du kan fokusere på jobben din.",
     },
   ]
 
   return (
     <section id="tjenester" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-gray-800">Våre Tjenester</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-gray-800">Dette gjør vi for deg</h2>
         <p className="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-          Vi tilbyr et bredt spekter av digitale tjenester for å hjelpe din bedrift å lykkes på nett.
+          Vi tar oss av alt det tekniske, så du kan konsentrere deg om bedriften din.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

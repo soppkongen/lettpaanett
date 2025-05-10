@@ -108,13 +108,13 @@ export function Footer() {
               &copy; {new Date().getFullYear()} Lett på Nett. Alle rettigheter reservert.
             </p>
             <div className="flex space-x-6">
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/personvern" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Personvern
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Vilkår
+              <Link href="/kjopsbetingelser" className="text-gray-400 hover:text-white text-sm transition-colors">
+                Kjøpsbetingelser
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Cookies
               </Link>
             </div>

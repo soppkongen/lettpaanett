@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
 import { Kundevurderinger } from "@/components/kundevurderinger"
 import { SalgsKampanje } from "@/components/salgs-kampanje"
+import { FAQSection } from "@/components/faq-section"
 
 export default function Home() {
   return (
@@ -25,11 +26,9 @@ export default function Home() {
           />
         </div>
         <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Profesjonell Webutvikling for Norske Bedrifter
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Nettsider som fungerer for din bedrift</h1>
           <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
-            Vi skaper moderne, brukervennlige nettsider som hjelper din bedrift å vokse i det digitale landskapet.
+            Vi lager nettsider som er enkle å bruke, ser bra ut og hjelper deg å få flere kunder.
           </p>
           <a
             href="#kampanje"
@@ -48,18 +47,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Din Partner for Digital Suksess</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Vi gjør det enkelt å komme på nett</h2>
               <p className="text-lg text-gray-600 mb-4">
-                Vi er et team av lidenskapelige webutviklere basert i Norge, dedikert til å hjelpe små og mellomstore
-                bedrifter med å etablere en sterk digital tilstedeværelse.
+                Lett på Nett gjør akkurat det navnet sier – vi hjelper deg å komme på nett uten stress. Du trenger ikke
+                være teknisk anlagt eller ha masse tid. Vi fikser alt det tekniske, du leverer bare innholdet.
               </p>
               <p className="text-lg text-gray-600 mb-4">
-                Med over 10 års erfaring i bransjen, forstår vi det unike norske markedet og de spesifikke behovene til
-                lokale bedrifter.
-              </p>
-              <p className="text-lg text-gray-600">
-                Vår tilnærming kombinerer kreativ design med teknisk ekspertise for å levere nettsider som ikke bare ser
-                fantastiske ut, men også gir resultater for din bedrift.
+                Vi snakker ikke teknisk sjargong eller lurer inn ekstra kostnader. Du får en nettside som fungerer, til
+                en pris du vet på forhånd, og som er klar når vi har lovet. Så enkelt er det.
               </p>
             </div>
             <div className="md:w-1/2 relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl">
@@ -81,12 +76,15 @@ export default function Home() {
       {/* Priser */}
       <Priser />
 
+      {/* FAQ-seksjon */}
+      <FAQSection />
+
       {/* Kontakt */}
       <section id="kontakt" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-gray-800">Ta Kontakt</h2>
           <p className="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Klar for å ta din bedrift til neste nivå? Fyll ut skjemaet under, så tar vi kontakt innen 24 timer.
+            Vil du ha en nettside som fungerer for din bedrift? Fyll ut skjemaet, så ringer vi deg innen 24 timer.
           </p>
           <div className="max-w-3xl mx-auto">
             <Kontaktskjema />

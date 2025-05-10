@@ -28,7 +28,7 @@ export function Kontaktskjema() {
       <div className="bg-white p-8 rounded-lg shadow-md text-center">
         <CheckCircle2 className="h-16 w-16 text-green-500 mx-auto mb-4" />
         <h3 className="text-2xl font-bold mb-2">Takk for din henvendelse!</h3>
-        <p className="text-gray-600 mb-6">Vi har mottatt din melding og vil kontakte deg innen 24 timer.</p>
+        <p className="text-gray-600 mb-6">Vi har mottatt meldingen din og ringer deg innen 24 timer.</p>
         <Button onClick={() => setIsSubmitted(false)} variant="outline">
           Send en ny henvendelse
         </Button>
@@ -43,13 +43,13 @@ export function Kontaktskjema() {
           <label htmlFor="navn" className="block text-sm font-medium text-gray-700 mb-1">
             Navn
           </label>
-          <Input id="navn" name="navn" required placeholder="Ditt fulle navn" />
+          <Input id="navn" name="navn" required placeholder="Ditt navn" />
         </div>
         <div>
           <label htmlFor="bedrift" className="block text-sm font-medium text-gray-700 mb-1">
             Bedrift
           </label>
-          <Input id="bedrift" name="bedrift" placeholder="Bedriftens navn" />
+          <Input id="bedrift" name="bedrift" placeholder="Firmanavn" />
         </div>
         <div>
           <label htmlFor="epost" className="block text-sm font-medium text-gray-700 mb-1">
@@ -67,7 +67,7 @@ export function Kontaktskjema() {
 
       <div className="mb-6">
         <label htmlFor="tjeneste" className="block text-sm font-medium text-gray-700 mb-1">
-          Hvilken tjeneste er du interessert i?
+          Hva er du interessert i?
         </label>
         <select
           id="tjeneste"
@@ -75,10 +75,9 @@ export function Kontaktskjema() {
           className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         >
           <option value="">Velg tjeneste</option>
-          <option value="nettside">Nettside Utvikling</option>
-          <option value="ehandel">E-handel Løsning</option>
-          <option value="redesign">Redesign av Eksisterende Nettside</option>
-          <option value="seo">SEO Optimalisering</option>
+          <option value="nettside">Ny nettside</option>
+          <option value="redesign">Oppgradering av eksisterende nettside</option>
+          <option value="seo">Søkemotoroptimalisering</option>
           <option value="vedlikehold">Vedlikehold & Support</option>
           <option value="annet">Annet</option>
         </select>
@@ -86,14 +85,14 @@ export function Kontaktskjema() {
 
       <div className="mb-6">
         <label htmlFor="melding" className="block text-sm font-medium text-gray-700 mb-1">
-          Din Melding
+          Din melding
         </label>
-        <Textarea id="melding" name="melding" rows={5} placeholder="Fortell oss om ditt prosjekt og dine behov..." />
+        <Textarea id="melding" name="melding" rows={5} placeholder="Fortell kort om hva du trenger hjelp med..." />
       </div>
 
       <div className="flex justify-end">
         <Button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Sender..." : "Send Henvendelse"}
+          {isSubmitting ? "Sender..." : "Send melding"}
         </Button>
       </div>
     </form>

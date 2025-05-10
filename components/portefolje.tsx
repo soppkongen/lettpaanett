@@ -5,21 +5,21 @@ export function Portefolje() {
   const designStiler = [
     {
       title: "Minimalistisk",
-      description: "Ren og elegant design. Perfekt for elektrikere, arkitekter og moderne tømrere.",
+      description: "Enkel og stilren design. Perfekt for elektrikere, snekkere og håndverkere.",
       image: "/lokal-handverker.png",
       color: "bg-gray-50",
       url: "/stiler/minimalistisk",
     },
     {
       title: "Moderne",
-      description: "Frisk og dynamisk design. Ideell for bedrifter, kontorer og profesjonelle tjenester.",
+      description: "Frisk og profesjonell design. Passer for bedrifter, kontorer og konsulenter.",
       image: "/moderne-bedriftsside.png",
       color: "bg-white",
       url: "/stiler/moderne",
     },
     {
       title: "Tradisjonell",
-      description: "Klassisk og tillitsvekkende design. Passer for eiendomsmeglere, advokater og konsulenter.",
+      description: "Klassisk og tillitsvekkende design. Bra for eiendomsmeglere og advokater.",
       image: "/eiendomsmegler.png",
       color: "bg-gray-100",
       url: "/stiler/tradisjonell",
@@ -29,9 +29,9 @@ export function Portefolje() {
   return (
     <section id="portefolje" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-gray-800">Velg Din Stil</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-gray-800">Velg din stil</h2>
         <p className="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-          Tre designstiler som kan tilpasses din bedrifts identitet.
+          Tre forskjellige stiler som vi tilpasser til din bedrift.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -52,7 +52,7 @@ export function Portefolje() {
                   href={stil.url}
                   className="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-6 rounded-lg transition-all inline-block w-full text-center"
                 >
-                  Se forhåndsvisning
+                  Se eksempel
                 </Link>
               </div>
             </div>

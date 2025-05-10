@@ -12,7 +12,6 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            {/* Endre navnet i navigasjonsmenyen */}
             <Link href="/" className="text-2xl font-bold text-primary">
               Lett på Nett
             </Link>
@@ -31,6 +30,9 @@ export function Navbar() {
             </Link>
             <Link href="#priser" className="text-gray-700 hover:text-primary font-medium">
               Priser
+            </Link>
+            <Link href="#faq" className="text-gray-700 hover:text-primary font-medium">
+              FAQ
             </Link>
             <Link
               href="#kontakt"
@@ -82,6 +84,13 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Priser
+              </Link>
+              <Link
+                href="#faq"
+                className="text-gray-700 hover:text-primary font-medium px-4 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                FAQ
               </Link>
               <Link
                 href="#kontakt"
