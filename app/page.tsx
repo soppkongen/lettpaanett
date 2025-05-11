@@ -26,9 +26,11 @@ export default function Home() {
           />
         </div>
         <div className="container mx-auto px-4 z-10 text-center">
+          {/* Fjernet den lille overskriften: 
           <div className="bg-primary/20 backdrop-blur-sm inline-block px-4 py-2 rounded-full mb-4">
             <span className="text-white font-medium">Vi gjør jobben – du slipper å løfte en finger</span>
-          </div>
+          </div> 
+          */}
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Nettsider der vi gjør alt for deg</h1>
           <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
             Mens konkurrentene tilbyr «gjør-det-selv»-verktøy, tar vi oss av absolutt alt – fra design til lansering.
