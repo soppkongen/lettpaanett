@@ -6,7 +6,7 @@ export function Tjenester() {
       icon: <ThumbsUp className="h-10 w-10 text-primary" />,
       title: "Vi gjør alt for deg",
       description: "Mens andre tilbyr «gjør-det-selv»-verktøy, tar vi oss av absolutt alt fra A til Å.",
-      highlighted: true,
+      highlighted: false, // Endret fra true til false
     },
     {
       icon: <Code className="h-10 w-10 text-primary" />,
@@ -50,10 +50,7 @@ export function Tjenester() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {tjenester.map((tjeneste, index) => (
-            <div
-              key={index}
-              className={`${tjeneste.highlighted ? "bg-primary/5 border border-primary/20" : "bg-white"} p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow`}
-            >
+            <div key={index} className={`bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow`}>
               <div className="mb-4">{tjeneste.icon}</div>
               <h3 className="text-xl font-bold mb-3 text-gray-800">{tjeneste.title}</h3>
               <p className="text-gray-600">{tjeneste.description}</p>
