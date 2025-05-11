@@ -28,7 +28,7 @@ export function Kontaktskjema() {
       <div className="bg-white p-8 rounded-lg shadow-md text-center">
         <CheckCircle2 className="h-16 w-16 text-green-500 mx-auto mb-4" />
         <h3 className="text-2xl font-bold mb-2">Takk for din henvendelse!</h3>
-        <p className="text-gray-600 mb-6">Vi har mottatt meldingen din og ringer deg innen 24 timer.</p>
+        <p className="text-gray-600 mb-6">Vi har mottatt meldingen din og kontakter deg innen 24 timer.</p>
         <Button onClick={() => setIsSubmitted(false)} variant="outline">
           Send en ny henvendelse
         </Button>
@@ -38,6 +38,13 @@ export function Kontaktskjema() {
 
   return (
     <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+        <p className="text-gray-700">
+          <strong>Vi gjør alt for deg!</strong> Fyll ut skjemaet, så tar vi kontakt for å diskutere dine behov. Du
+          trenger ikke løfte en finger – vi tar oss av hele prosessen.
+        </p>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div>
           <label htmlFor="navn" className="block text-sm font-medium text-gray-700 mb-1">
@@ -92,7 +99,7 @@ export function Kontaktskjema() {
 
       <div className="flex justify-end">
         <Button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Sender..." : "Send melding"}
+          {isSubmitting ? "Sender..." : "Send melding – vi gjør resten"}
         </Button>
       </div>
     </form>

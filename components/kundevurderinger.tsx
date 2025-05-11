@@ -27,7 +27,7 @@ export function Kundevurderinger() {
       stilling: "Partner",
       bilde: "/kundevurdering-anders.png",
       tekst:
-        "Vi trengte en profesjonell nettside som reflekterte vår ekspertise og seriøsitet. Lett på Nett forstod umiddelbart vår visjon og skapte en elegant løsning som har gitt oss flere henvendelser fra potensielle klienter. Deres oppfølging og support har vært upåklagelig.",
+        "Det som virkelig imponerte oss var deres grundige konkurrentanalyse, noe ingen andre tilbød. De kartla våre konkurrenters styrker og svakheter, og brukte denne innsikten til å utvikle en nettside som virkelig skiller seg ut. Takket være denne tilnærmingen har vi nå en bedre posisjon i markedet og flere henvendelser fra potensielle klienter.",
       stjerner: 5,
     },
     {

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, Sparkles, CheckCircle } from "lucide-react"
 
 export function SalgsKampanje() {
   return (
@@ -16,13 +16,19 @@ export function SalgsKampanje() {
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4 md:mb-6">
-              Kom i gang på nett for kun <span className="text-primary">4500 kr</span>
+              Få en komplett nettside for kun <span className="text-primary">4500 kr</span>
             </h2>
+
+            <div className="text-center mb-8">
+              <p className="text-lg md:text-xl font-medium text-gray-700 max-w-3xl mx-auto">
+                <span className="bg-yellow-100 px-2 py-1 rounded">Vi gjør alt – du trenger ikke løfte en finger</span>
+              </p>
+            </div>
 
             <div className="flex flex-col md:flex-row gap-6 md:gap-8 mb-6 md:mb-8">
               <div className="md:w-2/3">
                 <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6">
-                  Vi lager siden for deg – du trenger bare å sende oss info:
+                  <strong>Mens andre tilbyr "gjør-det-selv"-verktøy, tar vi oss av absolutt alt:</strong>
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                   {[
@@ -36,20 +42,7 @@ export function SalgsKampanje() {
                     "Fungerer på mobil og PC",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <div className="h-4 md:h-5 w-4 md:w-5 rounded-full bg-green-500 text-white flex items-center justify-center shrink-0 mt-1 mr-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-2 md:h-3 w-2 md:w-3"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </div>
+                      <CheckCircle className="h-5 w-5 text-green-500 shrink-0 mr-2 mt-0.5" />
                       <span className="text-sm md:text-base text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -82,7 +75,7 @@ export function SalgsKampanje() {
                 href="/sommersalg"
                 className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg text-base md:text-lg transition-all flex items-center justify-center group"
               >
-                Bestill nå og spar 50%
+                Bestill nå – vi gjør alt for deg
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>

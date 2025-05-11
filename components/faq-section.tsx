@@ -6,16 +6,23 @@ import { ChevronDown } from "lucide-react"
 interface FAQItem {
   question: string
   answer: string
+  highlighted?: boolean
 }
 
 export function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const toggleQuestion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)
   }
 
   const faqItems: FAQItem[] = [
+    {
+      question: "Hva mener dere med at dere «gjør alt» for meg?",
+      answer:
+        "Mens mange konkurrenter tilbyr verktøy der du selv må bygge nettsiden, tar vi oss av absolutt alt. Du trenger bare å gi oss grunnleggende informasjon om bedriften din, så ordner vi resten – design, tekst, bilder, teknisk oppsett, søkemotoroptimalisering og lansering. Du trenger ikke lære noen verktøy eller bruke tid på å bygge noe selv.",
+      highlighted: false, // Endret fra true til false
+    },
     {
       question: "Hvor lang tid tar det å få nettsiden?",
       answer:
@@ -47,9 +54,9 @@ export function FAQSection() {
         "Ja, alle nettsidene våre bygges slik at Google liker dem. Vi fikser titler, beskrivelser og bilder så de er optimalisert for søk. Vil du ha ekstra hjelp til å komme høyere opp i søkeresultatene, har vi tilleggspakker for det også.",
     },
     {
-      question: "Kan dere fikse e-post med mitt eget domene?",
+      question: "Hvordan analyserer dere konkurrentene mine?",
       answer:
-        "Ja, vi kan sette opp e-postadresser med ditt firmanavn (som navn@dittfirma.no). Det gir et mer profesjonelt inntrykk enn å bruke gmail eller hotmail. Vi hjelper deg med å sette det opp og viser deg hvordan du bruker det.",
+        "Vi analyserer konkurrentenes nettsteder grundig for å kartlegge innhold, nøkkelord og strategier. På denne måten utvikler vi en målrettet og effektiv SEO-plan som fremhever dine unike styrker, uten å direkte kopiere eller konkurrere med konkurrentenes innhold.",
     },
   ]
 
@@ -66,7 +73,7 @@ export function FAQSection() {
             {faqItems.map((item, index) => (
               <div
                 key={index}
-                className="border border-gray-200 rounded-lg overflow-hidden bg-white transition-all duration-200 hover:shadow-md"
+                className={`border ${item.highlighted ? "border-primary/30 bg-primary/5" : "border-gray-200 bg-white"} rounded-lg overflow-hidden transition-all duration-200 hover:shadow-md`}
               >
                 <button
                   className="flex justify-between items-center w-full p-5 text-left"
@@ -74,9 +81,11 @@ export function FAQSection() {
                   aria-expanded={openIndex === index}
                   aria-controls={`faq-answer-${index}`}
                 >
-                  <span className="font-medium text-gray-800">{item.question}</span>
+                  <span className={`font-medium ${item.highlighted ? "text-primary" : "text-gray-800"}`}>
+                    {item.question}
+                  </span>
                   <ChevronDown
-                    className={`h-5 w-5 text-gray-500 transition-transform duration-200 ${
+                    className={`h-5 w-5 ${item.highlighted ? "text-primary" : "text-gray-500"} transition-transform duration-200 ${
                       openIndex === index ? "transform rotate-180" : ""
                     }`}
                   />

@@ -31,6 +31,9 @@ export function Navbar() {
             <Link href="#priser" className="text-gray-700 hover:text-primary font-medium">
               Priser
             </Link>
+            <Link href="/blogg" className="text-gray-700 hover:text-primary font-medium">
+              Blogg
+            </Link>
             <Link href="#faq" className="text-gray-700 hover:text-primary font-medium">
               FAQ
             </Link>
@@ -84,6 +87,13 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Priser
+              </Link>
+              <Link
+                href="/blogg"
+                className="text-gray-700 hover:text-primary font-medium px-4 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blogg
               </Link>
               <Link
                 href="#faq"

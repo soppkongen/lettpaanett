@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Oppdatert metadata for bedre SEO
 export const metadata: Metadata = {
-  title: "Lett på Nett - Enkel og Rimelig Webutvikling for Norske Bedrifter",
+  title: "Lett på Nett - Få laget profesjonell nettside for din bedrift",
   description:
-    "Lett på Nett gjør det enkelt å lykkes digitalt med raske, rimelige og brukervennlige nettsider for små bedrifter og gründere. Få en profesjonell nettside fra kun 4500 kr.",
+    "Vi lager nettsider for bedrifter som vil ha en profesjonell tilstedeværelse på nett uten å gjøre jobben selv. Få en komplett nettside fra kun 4500 kr.",
   keywords:
-    "webutvikling, nettside, webdesign, responsivt design, SEO, Norge, norsk, bedrift, små bedrifter, gründer, rimelig nettside, enkel nettside",
+    "nettside, nettsted, lage nettside, bedriftsnettside, webside, hjemmeside, webutvikling, webdesign, responsivt design, SEO, Norge, norsk, bedrift, små bedrifter, gründer, rimelig nettside, enkel nettside",
   authors: [{ name: "Lett på Nett", url: "https://www.lettpaanett.no" }],
   creator: "Lett på Nett",
   publisher: "Lett på Nett",
@@ -28,8 +28,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Lett på Nett - Enkel og Rimelig Webutvikling for Norske Bedrifter",
-    description: "Få en profesjonell nettside fra kun 4500 kr. Perfekt for små bedrifter og gründere.",
+    title: "Lett på Nett - Få laget profesjonell nettside for din bedrift",
+    description:
+      "Vi lager nettsider for bedrifter som vil ha en profesjonell tilstedeværelse på nett uten å gjøre jobben selv. Få en komplett nettside fra kun 4500 kr.",
     url: "https://www.lettpaanett.no",
     siteName: "Lett på Nett",
     locale: "nb_NO",
@@ -39,14 +40,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpg", // Dette bildet må legges til i public-mappen
         width: 1200,
         height: 630,
-        alt: "Lett på Nett - Profesjonell Webutvikling",
+        alt: "Lett på Nett - Profesjonell Nettside for din Bedrift",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lett på Nett - Enkel og Rimelig Webutvikling",
-    description: "Få en profesjonell nettside fra kun 4500 kr. Perfekt for små bedrifter og gründere.",
+    title: "Lett på Nett - Få laget profesjonell nettside for din bedrift",
+    description:
+      "Vi lager nettsider for bedrifter som vil ha en profesjonell tilstedeværelse på nett uten å gjøre jobben selv. Få en komplett nettside fra kun 4500 kr.",
     images: ["/og-image.jpg"], // Samme bilde som for OpenGraph
   },
   robots: {
@@ -102,6 +104,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Lett på Nett",
+              description:
+                "Vi lager profesjonelle nettsider for bedrifter som vil ha en sterk tilstedeværelse på nett uten å gjøre jobben selv.",
               image: "https://www.lettpaanett.no/logo.png",
               "@id": "https://www.lettpaanett.no",
               url: "https://www.lettpaanett.no",
@@ -129,6 +133,80 @@ export default function RootLayout({
                 "https://www.instagram.com/lettpaanett",
                 "https://www.linkedin.com/company/lettpaanett",
               ],
+              offers: {
+                "@type": "Offer",
+                name: "Nettside for nyetablerte bedrifter",
+                description: "Komplett nettside med design, innhold og teknisk oppsett",
+                price: "4500",
+                priceCurrency: "NOK",
+              },
+              serviceType: ["Nettside", "Webdesign", "SEO", "Responsivt design"],
+            }),
+          }}
+        />
+
+        <Script
+          id="service-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "Nettside for bedrifter",
+              description:
+                "Vi lager profesjonelle nettsider for bedrifter som vil ha en sterk tilstedeværelse på nett uten å gjøre jobben selv.",
+              provider: {
+                "@type": "LocalBusiness",
+                name: "Lett på Nett",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Snorresgate 22",
+                  addressLocality: "Kristiansand",
+                  postalCode: "4632",
+                  addressCountry: "NO",
+                },
+              },
+              serviceType: "Nettside",
+              areaServed: {
+                "@type": "Country",
+                name: "Norge",
+              },
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Nettsider",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Basis nettside",
+                      description: "Responsiv nettside med 5 sider",
+                    },
+                    price: "9900",
+                    priceCurrency: "NOK",
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Business nettside",
+                      description: "Responsiv nettside med 10 sider og avansert SEO",
+                    },
+                    price: "19900",
+                    priceCurrency: "NOK",
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Premium nettside",
+                      description: "Responsiv nettside med ubegrenset sider og komplett SEO-pakke",
+                    },
+                    price: "29900",
+                    priceCurrency: "NOK",
+                  },
+                ],
+              },
             }),
           }}
         />
